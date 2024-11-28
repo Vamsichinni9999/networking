@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .certificate-container {
+            position: relative;
+            width: 90%;
+            max-width: 600px; /* Reduce overall container size */
+            margin: 20px;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .certificate-image {
+            width: 100%;
+            max-height: 400px; /* Limit the height of the image */
+            object-fit: contain; /* Ensure the image retains its aspect ratio */
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="certificate-container">
+        <img src="s1.png" alt="Certificate" class="certificate-image">
+    </div>
+    <a href="s1.pdf" download="Certificate" class="download-btn">Download PDF</a>
+
+</body>
+</html>
